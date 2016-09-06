@@ -17,7 +17,7 @@
 // write your code here
 
 
-
+var person: (name: String, age: Int) = ("Elias", 28)
 
 
 
@@ -29,7 +29,7 @@
 // write your code here
 
 
-
+print(person.name, person.age)
 
 
 
@@ -39,7 +39,7 @@
  ### 3. It is the person's birthday! Increment the person's age by one year that you created in Question 1.
  */
 // write your code here
-
+person.age += 1
 
 
 
@@ -53,7 +53,7 @@
 // write your code here
 
 
-
+print("happy \(person.age), \(person.name)!")
 
 
 
@@ -65,7 +65,7 @@
 // write your code here
 
 
-
+var someone: (name: String, age: Int) = ("Laura", 28)
 
 
 
@@ -77,7 +77,7 @@
 // write your code here
 
 
-
+print("\(someone.name) is \(someone.age)")
 
 
 
@@ -91,7 +91,7 @@
 
 
 
-
+someone.age += 1
 
 /*:
  ### 8. Print out "Happy <Age> birthday, <Name>!" using the `someone` variable.
@@ -99,7 +99,7 @@
 // write your code here
 
 
-
+print("Happy \(someone.age) birthday, \(someone.name)")
 
 
 
@@ -110,19 +110,23 @@
  */
 // write your code here
 
+let human: (name: String, age: Int) = ("liz", 28)
+//human.age = 29
+
+
+var humanOther = human
+humanOther.age = 35
 
 
 
-
-
-
-
+//var humanOther: (name: String, age: Int) = ("liz", 28)
+//humanOther.age = 30
 /*:
  ### 10. Can you change `human`'s age? Why or why not?
  */
 
 
-
+//Like in other instances let variables are constants and cant be changed without reassigning the constant variable to a mutable one, ie humanOther
 
 
 
